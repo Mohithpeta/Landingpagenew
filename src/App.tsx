@@ -1,19 +1,24 @@
 import { useState, useEffect } from 'react';
 import { ArrowRight, ArrowLeft, Layout, Target, Users, Clock, Instagram, Linkedin } from 'lucide-react';
+import image1 from './assets/1.jpg';
+import image2 from './assets/2.png';
+import image3 from './assets/3.jpg';
+import logo from './assets/Lifecourse Logo.png';
+import deepvitalLogo from './assets/Deepvital logo.png';
 
 const carouselData = [
   {
-    image: "src/assets/1.jpg?auto=format&fit=crop&q=80&w=2000&h=1000",
+    image: image1,
     title: "Postpartum Care Doesn't End at 6 Weeks - Your Recovery Matters",
     subtitle: "For too long, postpartum care has ended at six weeks, leaving millions of mothers without support as they navigate pain, depression, and long-term health risks.",
   },
   {
-    image: "src/assets/2.png?auto=format&fit=crop&q=80&w=2000&h=1000",
+    image: image2,
     title: "Your Postpartum Journey Matters—Support Beyond 6 Weeks",
     subtitle: "Be the journey doesn't stop here, because the months after childbirth are just as critical as pregnancy itself, shaping both mother and child's future health.",
   },
   {
-    image: "src/assets/3.jpg?auto=format&fit=crop&q=80&w=2000&h=1000",
+    image: image3,
     title: "LifeCourse: Expert-Guided Postpartum Support for Lifelong Wellness",
     subtitle: "Our LifeCourse platform is here for the long haul, providing continuous, evidence-based expert care signals to help you thrive in your postpartum journey.",
   }
@@ -86,7 +91,7 @@ function App() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between h-16">
             <div className="flex items-center">
-              <img src="src/assets/Lifecourse Logo.png" alt="LifeCourse" className="h-8" />
+              <img src={logo} alt="LifeCourse" className="h-8" />
             </div>
             <div className="flex items-center space-x-4">
               <button className="px-4 py-2 text-[#5E17E8] hover:text-[#4912ba] font-medium">
@@ -219,8 +224,8 @@ function App() {
             </div>
 
             <div className="flex items-center justify-center space-x-4">
-              <img src="src/assets/Lifecourse Logo.png" alt="LifeCourse" className="h-8" />
-              <img src="src/assets/Deepvital logo.png" alt="Deepvital" className="h-8" />
+              <img src={logo} alt="LifeCourse" className="h-8" />
+              <img src={deepvitalLogo} alt="Deepvital" className="h-8" />
             </div>
 
             <p className="text-gray-400 text-sm mt-8">
